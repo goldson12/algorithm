@@ -1,4 +1,5 @@
 package loveistiming;
+// https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWLv6mx6htoDFAVV
 
 import java.util.Scanner;
 

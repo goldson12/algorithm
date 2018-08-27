@@ -1,4 +1,5 @@
 package mafia;
+// https://www.acmicpc.net/problem/10542
 
 import java.util.ArrayList;
 import java.util.Scanner;

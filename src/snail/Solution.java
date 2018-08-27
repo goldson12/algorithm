@@ -1,4 +1,5 @@
 package snail;
+// https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PobmqAPoDFAUq&categoryId=AV5PobmqAPoDFAUq&categoryType=CODE
 
 import java.util.ArrayList;
 import java.util.Scanner;

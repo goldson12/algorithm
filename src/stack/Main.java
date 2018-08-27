@@ -1,4 +1,5 @@
 package stack;
+// https://www.acmicpc.net/problem/10828
 
 import java.util.Scanner;
 

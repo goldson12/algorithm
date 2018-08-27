@@ -1,4 +1,5 @@
 package queue;
+// https://www.acmicpc.net/problem/10845
 
 import java.util.Scanner;
 
