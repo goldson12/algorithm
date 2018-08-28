@@ -13,7 +13,7 @@ public class Main {
 		int n = sc.nextInt();
 		ArrayList<Integer> list = new ArrayList<>();
 		list.add(0);
-		int[][] d = new int[10001][3];
+		int[] dp = new int[n+1];
 		
 		if(1<=n && n<=10000) {
 			
@@ -23,19 +23,15 @@ public class Main {
 			}
 			
 			for(int i=1; i<=n; i++) {
-				d[i][0] = Math.max(Math.max(d[i-1][0], d[i-1][1]), d[i-1][2]);
-				d[i][1] = d[i-1][0] + list.get(i);
-				d[i][2] = d[i-1][1] + list.get(i);
+				if(i == 1)
+					dp[i] = list.get(i);
+				else if(i == 2)
+					dp[i] = list.get(i-1) + list.get(i);
+				else
+					dp[i] = Math.max(dp[i-1], Math.max(dp[i-3] + list.get(i-1) + list.get(i), dp[i-2] + list.get(i)));
 			}
-
-			/*for(int x=0; x<d.length; x++) {
-				for(int y=0; y<d[x].length;y++) {
-					System.out.print(d[x][y]+" ");
-				}
-				System.out.println();
-			}*/
 			
-			System.out.println(Math.max(Math.max(d[n][0], d[n][1]), d[n][2]));
+			System.out.println(dp[n]);
 			
 		}
 		
